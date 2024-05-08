@@ -34,7 +34,7 @@ try{
             <br>${process.env.DOMAIN}/veifyemail?token=${hashedToken}
         </p>`, // html body
           }
-     const mailResponse=     await transport.sendMail(mailOptions)
+     const mailResponse=    await transport.sendMail(mailOptions)
      return mailResponse;
 }catch(error:any){
     throw new Error(error.message)

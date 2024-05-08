@@ -1,7 +1,9 @@
-import Image from "next/image";
+
 
 export default function Home() {
   return (
-    <div className=" text-slate-600 bg-green-500">NEXT AUTH</div>
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-black">
+
+    </main>
   );
 }
