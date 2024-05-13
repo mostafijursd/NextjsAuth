@@ -29,12 +29,15 @@ const ProfilePage = () => {
   }
   }
   return (
-    <div className=' bg-slate-800 flex flex-col items-center 
-    justify-center min-h-screen py-2 text-white gap-4 '>
+    <div className=' bg-slate-500 flex flex-col  items-center 
+    justify-center min-h-screen py-2 text-white gap-4  '>
 
-<h1>Profile</h1>
+ 
+
+<h1 className=' text-xl rounded-full text-white italic text-center
+ bg-teal-700 w-20 h-20 flex items-center justify-center  shadow-md cursor-pointer'>Profile</h1>
             <hr />
-            <p>Profile page</p>
+            <h3 className=' text-base text-yellow-400' >Profile page</h3>
             <h2 className="p-1 rounded bg-green-500">{data === 'nothing' ? "Nothing" : <Link href={`/profile/${data}`}>{data}
             </Link>}</h2>
         <hr />
