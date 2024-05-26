@@ -37,13 +37,13 @@ const router=useRouter();
 
     },[user])
   return (
-    <div className=' bg-slate-800 flex flex-col items-center 
-    justify-center min-h-screen py-2 text-white'>
+    <div className='bg-gradient-to-r from-slate-900 to-slate-700 flex flex-col items-center 
+    justify-center min-h-screen py-2 text-white gap-3'>
         
-        <h1  className=' text-2xl italic '>{loading ? "Processing..." : "Signup"}</h1>
+        <h1 className='text-2xl font-medium text-gray-900 dark:text-white '>{loading ? "Processing..." : "Signup"}</h1>
         <hr />
 
-        <label htmlFor="username"  className=' text-2xl italic '>usename</label>
+        <label htmlFor="username" className='text-2xl font-medium text-gray-900 dark:text-white '>usename</label>
 <input 
   className="p-2 border border-gray-300 rounded-lg mb-4 
   focus:outline-none focus:border-gray-600 text-black"
@@ -52,7 +52,7 @@ onChange={(e)=>setUser({...user,username:e.target.value})}
 type="text"
 placeholder='username'
 />
-<label htmlFor="email"  className=' text-2xl italic '>email</label>
+<label htmlFor="email" className='text-2xl font-medium text-gray-900 dark:text-white '>email</label>
         <input 
         className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600 text-black"
             id="email"
@@ -61,7 +61,7 @@ placeholder='username'
             onChange={(e) => setUser({...user, email: e.target.value})}
             placeholder="email"
             />
-        <label htmlFor="password"  className=' text-2xl italic '>password</label>
+        <label htmlFor="password"  className='text-2xl font-medium text-gray-900 dark:text-white '>password</label>
         <input 
         className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600 text-black"
             id="password"
@@ -70,13 +70,13 @@ placeholder='username'
             onChange={(e) => setUser({...user, password: e.target.value})}
             placeholder="password"
             />
-  <button className='p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none 
- bg-cyan-800 focus:border-gray-600'
+  <button className='text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 
+  font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2'
   onClick={onSiginup}
  >
     
     {buttonDisabled ? "No Signup" :"Signup"}</button>
-    <Link href="/login"> Visit login page</Link>
+    <Link href="/login"  className=' text-xl font-medium  dark:text-white hover:text-cyan-400 '> Visit login page</Link>
         </div>
   )
 }

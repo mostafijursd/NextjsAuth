@@ -29,21 +29,22 @@ const ProfilePage = () => {
   }
   }
   return (
-    <div className=' bg-slate-500 flex flex-col  items-center 
+    <div className='bg-gradient-to-r from-fuchsia-500 to-cyan-500 flex flex-col  items-center 
     justify-center min-h-screen py-2 text-white gap-4  '>
 
  
 
 <h1 className=' text-xl rounded-full text-white italic text-center
- bg-teal-700 w-20 h-20 flex items-center justify-center  shadow-md cursor-pointer'>Profile</h1>
+bg-gradient-to-r from-emerald-500 to-emerald-900 w-20 h-20 flex items-center justify-center  shadow-md cursor-pointer'>Profile</h1>
             <hr />
-            <h3 className=' text-base text-yellow-400' >Profile page</h3>
+            <h3 className='text-2xl font-medium text-gray-900 dark:text-white ' >Profile page</h3>
             <h2 className="p-1 rounded bg-green-500">{data === 'nothing' ? "Nothing" : <Link href={`/profile/${data}`}>{data}
             </Link>}</h2>
         <hr />
         <button
         onClick={logout}
-        className="bg-blue-500 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        className="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 
+        font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
         >Logout</button>
 
         <button
