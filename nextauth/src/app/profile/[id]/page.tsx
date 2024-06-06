@@ -6,7 +6,7 @@ const page = ({params}:any) => {
     justify-center min-h-screen py-2 text-white gap-4'  >
 
 <h1>Profile page</h1>
-<h2 className=" p-3 ml-2  bg-green-600 rounded text-white">{params.id}</h2>
+<h2 className=" p-3 ml-2 bg-green-400   rounded text-white">{params.id}</h2>
     </div>
   )
 }
