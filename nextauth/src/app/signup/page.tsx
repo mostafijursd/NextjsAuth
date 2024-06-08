@@ -4,14 +4,14 @@ import axios from 'axios';
 import { toast } from 'react-hot-toast';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-const page = () => {
+const Page = () => {
 
 const router=useRouter();
     const [user,setUser]=useState({
       email:"",
       password :"",
       username :""
-    })
+    });
 
     const [buttonDisabled,setButtonDisabled]=useState(false);
  const [loading,setLoading]=useState(false);
@@ -100,4 +100,4 @@ const router=useRouter();
   )
 }
 
-export default page;
+export default Page;
