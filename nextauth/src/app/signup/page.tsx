@@ -4,7 +4,7 @@ import axios from 'axios';
 import { toast } from 'react-hot-toast';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-const Page = () => {
+const SignupPage = () => {
 
 const router=useRouter();
     const [user,setUser]=useState({
@@ -98,6 +98,6 @@ const router=useRouter();
       </div>
     </div>
   )
-}
+};
 
-export default Page;
+export default SignupPage;
